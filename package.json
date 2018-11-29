@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "clean": "rimraf lib types",
-    "build": "tsc -p . && cpy src/internal lib/internal",
+    "build": "tsc -p . && cpy src/internal/errors.d.ts lib/internal && cpy scr/internal/errors.js lib/internal",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
